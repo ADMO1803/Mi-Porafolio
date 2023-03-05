@@ -1,3 +1,6 @@
+//INICIAR ANIMATE BOOTSTRAP
+  AOS.init();
+
 /*MODO DARK*/
 const body = document.querySelector('body')
   toggle = document.querySelector('.toggle')
@@ -19,8 +22,39 @@ const body = document.querySelector('body')
   })
 
 toggle.addEventListener("click", () => toggle.classList.toggle('active'))
+
 /*MODO DARK*/
 
+/*GALERIA*/
+
+const imgcaja = document.getElementById("imgcaja"),
+todoimg = document.getElementById("todoimg");
+
+function openTodoImg(referenc) {
+  // body...
+  imgcaja.style.display = "flex";
+  todoimg.src = referenc;
+}
+
+function closeImg() {
+  // body...
+  imgcaja.style.display = "none";
+}
+
+/*GALERIA*/
+
+/*HAMBURGUEASA*/
+
+const menu = document.querySelector("#menu-icon");
+const menunav = document.querySelector(".menu-nav");
+
+menu.addEventListener("click", ()=>{
+  menunav.classList.toggle("active")
+})
+
+menunav.addEventListener("click", ()=>{
+  menunav.classList.remove("active")
+})
 
 
 

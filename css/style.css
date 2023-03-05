@@ -60,6 +60,18 @@ body.dark{
 	color: #fff;
 }
 
+.dark .contactos-form form input, form textarea{
+	color: #fff;
+}
+
+.dark .contactos-form textarea{
+	color: #fff;
+}
+
+.dark .contactos-form .boton:hover{
+	border: 2px solid transparent;
+}
+
 
 
 /*BODY DARK*/
@@ -75,10 +87,9 @@ header{
 	align-items: center;
 	justify-content: space-between;
 	background: #18191a;
-	padding: 22px 60px;
-	border-bottom: 1px solid transparent;
+	padding: 22px 16% 30px;
+	border-bottom: 2px solid #f0810f;
 	transition: all .40 ease;
-	border: 1px solid #f0810f;
 }
 
 /*LOGO*/
@@ -215,7 +226,7 @@ section{
 .btn{
 	display: inline-block;
 	padding: 15px 40px;
-	border-radius: 0.5rem;
+	border-radius: 30px;
 	font-size: 17px;
 	font-weight: 500;
 	background: #f0810f;
@@ -226,8 +237,8 @@ section{
 
 .btn:hover{
     transform: scale(1.01) translateY(-5px);
-	background: transparent;
-	border: 2px solid #f0810f;
+	background: #c35831;
+	border: 2px solid black;
 }
 
 
@@ -277,19 +288,10 @@ section{
 	cursor: pointer;
 }
 
-.personal-img{
-	border: solid 2px #f0810f;
-	border-radius: 50%;
-	width: 100%;
-	height: auto;
-	max-width: 460px;
-	box-shadow: 2px 2px 2px 2px rgba(0,0,0,0.1);
-}
-
 .personal-img img{
 	height: auto;
 	width: 100%;
-	max-width: 460px;
+	max-width: 430px;
 	border-radius: 50%;
 	transition: 0.5s;
 }
@@ -351,12 +353,14 @@ section{
 	transition: all .40s ease;
 	cursor: pointer;
 	border-radius: 15px;
+	transition: .1s;
 }
 
 .caja img{
 	width: 200px;
 	height: 200px;
 	cursor: pointer;
+	transition: .1s;
 }
 
 .caja h3{
@@ -365,6 +369,7 @@ section{
 	margin: 15px 0;
 	transition: all .40s ease;
 	color: #fff;
+	transition: .1s;
 }
 
 .caja p{
@@ -405,64 +410,53 @@ section{
 	font-weight: 600;
 }
 
-.portafolio-cont{
+.img-portafolio{
+	width: 90%;
+	margin: 50px auto 50px;
 	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(300px, auto));
-	align-items: center;
-	text-align: center;
-	gap: 2rem;
-	margin-top: 5rem;
+	grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+	gap: 30px;
 }
 
-.row img{
-	height: auto;
+.img-portafolio img{
 	width: 100%;
-	border-radius: 15px;
-	margin-bottom: 1.5rem;
+	height: 100%;
+	cursor: pointer;
+	transition: 1s;
 }
 
-.row{
-    padding: 25px;
-    background: #f0810f;
-    border-radius: 0.5rem;
-    transition: all .40s ease;
+.img-portafolio img hover{
+	transform: scale(1.2);
 }
 
-.main-row{
-	display: flex;
+.portafolio-img{
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,0.7);
+	position: fixed;
+	top: 0;
+	left: 0;
+	display: none;
 	align-items: center;
-	justify-content: space-between;
-	margin-bottom: 1rem;
+	justify-content: center;
+	z-index: 99;
 }
 
-.row h3{
-	font-weight: 700;
-	cursor: pointer;
+.portafolio-img img{
+	width: 100%;
+	max-width: 700px;
 }
 
-.row h6{
-	font-size: 16px;
-	font-weight: 500;
-	letter-spacing: 1px;
+.portafolio-img span{
+	position: absolute;
+	top: 15%;
+	right: 10%;
+	font-weight: 600;
+	font-size: 35px;
 	color: #fff;
 	cursor: pointer;
 }
 
-.row-icon i{
-	font-size: 22px;
-	transition: all .40s ease;
-}
-
-.row-icon i:hover{
-	color: #fff;
-}
-
-.row:hover{
-	transform: scale(1.01) translateY(-5px);
-	cursor: pointer;
-	background: #c35831;
-	border: 2px solid black;
-}
 
 /*CONTACTOS*/
 
@@ -543,17 +537,16 @@ section{
 }
 
 .contactos-form form input, form textarea{
-	border: none;
-	border-bottom: solid 3px #f0810f;
+	border: 2px solid #f0810f;
 	outline: none;
 	width: 100%;
+	margin: 5px;
 	padding: 18px;
-	background: /*#18191a*/ #333;
+	background: /*#18191a*/ transparent;
 	font-size: 1rem;
 	font-weight: 600;
-	margin-bottom: 0.5rem;
-	border-radius: 0.5rem; 
-	color: #fff;
+	border-radius: 30px; 
+	color: black;
 }
 
 .contactos-form textarea{
@@ -570,6 +563,7 @@ section{
 	color: #fff;
 	width: 190px;
 	transition: all .40s ease;
+	margin: 10px;
 	cursor: pointer;
 }
 
@@ -577,10 +571,102 @@ section{
 	transform: scale(1.01) translateY(-5px);
 	color: black;
 	background: #c35831;
-	border-bottom: 3px #c35831;
+	border: 2px solid  black;
 }
 
 
+
+@media (max-width: 1325px){
+	header{
+		padding: 16px 3%;
+	}
+
+	section{
+		padding: 130px 60px;
+	}
+
+	main{
+		padding: 130px  60px;
+	}
+}
+
+@media (max-width: 970px){
+	.home-text h1{
+	font-size: 1.5rem;
+}
+    .home-text h4{
+	font-size: 18px;
+}
+
+    .home-text h3{
+	font-size: 18px;
+}
+
+    section{
+    	padding: 70px 3% 60px;
+    }
+
+    main{
+    	padding: 70px 3% 60px;
+    }
+
+    .home{
+    	height: 85vh;
+    }
+
+    .personal{
+    	grid-template-columns: 1fr;
+    	justify-content: center;
+    }
+
+    .personal-img{
+    	text-align: center;
+    }
+
+@media (max-width: 900px){
+	#menu-icon{
+		display: block;
+	}
+
+	.menu-nav{
+	position: absolute;
+	top: -600px;
+	width: 250px;
+	right: 0;
+	left: 0;
+	display: flex;
+	flex-direction: column;
+	background: rgba(0,0,0,0.5);
+	border: 2px solid #f0810f;
+	text-align: left;
+	transition: all .40s ease;
+	}
+
+	.menu-nav a{
+		display: block;
+		padding: 1rem;
+		margin: 1rem;
+	}
+
+	.toggle{
+		margin: 2rem;
+	}
+
+	.menu-nav.active{
+		top: 100%;
+	}
+
+@media (max-width: 700px){
+	.servicios-cont{
+		grid-template-columns: 1fr;
+	}
+
+	.contactos{
+		grid-template-columns: 1fr;
+	}
+}	
+
+}
 
 
 

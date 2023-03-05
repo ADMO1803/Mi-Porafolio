@@ -1,0 +1,319 @@
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+list-style: none;
+font-family: 'Open Sans', sans-serif;
+}
+
+/*#1b5583*/
+
+body{
+	background: /*#f2f2f2*/ #f2f2f2;
+	display: flex;
+	justify-content: center;
+	align-items: center;min-height: 100vh;
+}
+
+.contenedor{
+	position: relative;
+	width: 100%;
+	max-width: 1000px;
+	min-height: 1000px;
+	margin: 50px;
+	background: #fff;
+	display: grid;
+	grid-template-columns: 0.5fr 1fr;
+	box-shadow: 0 35px 35px rgba(0,0,0,0.1);
+}
+
+.contenedor .isquierda{
+	position: relative;
+	background:#fff;
+	padding: 40px;
+}
+
+.contenedor .derecha{
+	position: relative;
+	background: #f0810f;
+	padding: 40px;
+}
+
+/*Perfil Derecho*/
+
+.perfil{
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding-bottom: 20px;
+	border-bottom: 2px solid #333;
+}
+
+.perfil .img-perfil{
+	position: relative;
+	width: 200px;
+	height: 200px;
+	border-radius: 50%;
+	overflow: hidden;
+}
+
+.perfil .img-perfil img{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.perfil h2{
+	color: #333;
+	font-size: 1.4em;
+	margin-top: 20px;
+	text-transform: uppercase;
+	text-align: center;
+	font-weight: 600;
+	line-height: 1.3em;
+}
+
+.perfil h2 span{
+	font-size: 0.8em;
+	font-weight: 300;
+	color: #fff;
+}
+
+.contactos{
+	padding-top: 40px;
+}
+
+.title{
+	color: #333;
+	text-transform: uppercase;
+	font-weight: 600;
+	letter-spacing: 1px;
+	margin-bottom: 20px;
+}
+
+.contactos ul{
+	position: relative;
+}
+
+.contactos ul li{
+	position: relative;
+	list-style: none;
+	margin: 10px 0;
+	cursor: pointer;
+}
+
+.contactos ul li .icon{
+	display: inline-block;
+	width: 30px;
+	font-size: 18px;
+	color: #333;
+}
+
+.contactos ul li span{
+	color: #fff;
+	font-weight: 300;
+	font-size: 1em;
+}
+
+.educacion{
+	padding-top: 40px;
+}
+
+.educacion li{
+	margin-bottom: 15px;
+}
+
+.educacion h5{
+	color: #333;
+	font-weight: 300;
+}
+
+.educacion h4:nth-child(2){
+	color: #fff;
+	font-weight: 500;
+}
+
+.educacion h4{
+	color: #f2f2f2;
+	font-weight: 300;
+}
+
+.leguaje .porcentaje{
+	position: relative;
+	width: 100%;
+	height: 6px;
+	background: #fff;
+	display: block;
+	margin-top: 5px;
+	border-radius: 20px;
+}
+
+.leguaje{
+	padding-top: 40px;
+}
+
+.leguaje span{
+	color: #fff;
+	font-weight: 300;
+	font-size: 1em;
+	margin-bottom: 10px;
+}
+
+.leguaje .porcentaje div{
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	background: #333;
+	border-radius: 20px;
+}
+
+/*Perfil Isquierdo*/
+
+.my{
+	margin-bottom: 50px;
+}
+
+.my:last-child{
+	margin-bottom: 0;
+}
+
+.title2{
+	color: #f0810f;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	margin-bottom: 10px;
+}
+
+p{
+	color: #333;
+	text-align: justify;
+}
+
+.caja{
+	display: flex;
+	flex-direction: row;
+	margin:20px 0;
+}
+
+.caja .my-exp{
+	min-width: 150px;
+}
+
+.caja .my-exp h5{
+	text-transform: uppercase;
+	color: /*#848c90*/ #333;
+	font-weight: 600;
+}
+
+.caja .text h4{
+	text-transform: uppercase;
+	color: #f0810f;
+	font-size: 16px;
+}
+
+.my-experto .caja{
+	position: relative;
+	width: 100%;
+	display: grid;
+	grid-template-columns:150px 1fr;
+	justify-content: center;
+	align-items: center;
+}
+
+.my-experto .caja h4{
+	text-transform: uppercase;
+	color: #333;
+	font-weight: 500;
+}
+
+.my-experto .caja .porcentaje{
+	position: relative;
+	width: 100%;
+	height: 10px;
+	background: #f0f0f0;
+	border-radius: 20px;
+}
+
+.my-experto .caja .porcentaje div{
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	background: #f0810f;
+	border-radius: 20px;
+}
+
+
+.my-intereces ul{
+	display: grid;
+	grid-template-columns:repeat(4,1fr);
+}
+
+.my-intereces ul li{
+	color: #333;
+	font-weight: 600;
+	margin: 20px 0;
+}
+
+.my-intereces ul li .bx{
+	color: #333;
+	font-size: 18px;
+	width: 20px;
+}
+
+@media (max-width: 850px){
+	/*.contenedor{
+		margin: 10px;
+		grid-template-columns: repeat(1,1fr);
+	}*/
+
+    .my-intereces ul{
+	grid-template-columns:repeat(2,1fr);
+    }
+
+	.caja{
+		flex-direction: column;
+	}
+
+	.caja .my-exp{
+		min-width: 150px;
+		margin-bottom: 5px;
+	}
+
+	@media (max-width: 800px){
+		.my-experto .caja{
+		grid-template-columns: repeat(150px 1fr);
+		margin-bottom: 30px;
+	}
+
+	 .my-experto .caja h4{
+	 	margin-bottom: 10px;
+	 }
+
+	}
+
+	@media (max-width: 860px){
+       .contenedor{
+		margin: 10px;
+		grid-template-columns: repeat(1,1fr);
+	}
+
+	@media (max-width: 450px){
+
+		.my-experto .caja{
+		grid-template-columns:repeat(1,1fr);
+		margin-bottom: 30px;
+	}
+		
+		.my-intereces ul{
+
+	    grid-template-columns:repeat(1,1fr);
+
+	}
+}
+
