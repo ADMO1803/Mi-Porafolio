@@ -28,7 +28,7 @@ toggle.addEventListener("click", () => toggle.classList.toggle('active'))
 /*GALERIA*/
 
 const imgcaja = document.getElementById("imgcaja"),
-todoimg = document.getElementById("todoimg");
+  todoimg = document.getElementById("todoimg");
 
 function openTodoImg(referenc) {
   // body...
@@ -48,14 +48,13 @@ function closeImg() {
 const menu = document.querySelector("#menu-icon");
 const menunav = document.querySelector(".menu-nav");
 
-menu.addEventListener("click", ()=>{
+menu.addEventListener("click", () => {
   menunav.classList.toggle("active")
 })
 
-menunav.addEventListener("click", ()=>{
+menunav.addEventListener("click", () => {
   menunav.classList.remove("active")
 })
-
 
 
 

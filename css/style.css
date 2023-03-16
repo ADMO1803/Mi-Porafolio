@@ -2,7 +2,6 @@
 margin: 0;
 padding: 0;
 box-sizing: border-box;
-font-family: 'Open Sans', sans-serif;
 text-decoration: none;
 list-style: none;
 
@@ -26,15 +25,19 @@ html,body{
 
 body{
 	background: #fff;
-	transition: 0.5 all ease-in-out;
+	font-family: 'Open Sans', sans-serif;
+	transition: .40s all ease-in-out;
 }
 
 /*BODY WHITE*/
 
 /*BODY DARK*/
 
+
+
 body.dark{
     background: #18191a;
+    transition: .40s all ease-in-out;
 }
 
 .dark .personal-text h2 {
@@ -181,12 +184,11 @@ header{
 
 /*HOME*/
 
-main {
+section{
 	padding: 160px 16% 60px;
-
 }
 
-section{
+main{
 	padding: 160px 16% 60px;
 }
 
@@ -194,6 +196,7 @@ section{
 	height: 100vh;
 	width: 100%;
 	position: relative;
+	background: #f7f7f7;
 	background: url(../img/home.jpg);
 	background-size: cover;
 	background-position: center;
@@ -217,7 +220,7 @@ section{
 
 .home-text h4{
 	color: #fff;
-	font-size: 24px;
+	font-size: 28px;
 	font-weight: 600;
 }
 
@@ -244,6 +247,12 @@ section{
     transform: scale(1.01) translateY(-5px);
 	background: #c35831;
 	border: 2px solid black;
+}
+
+.home img{
+	width: 500px;
+	height: auto;
+	margin: 0 auto;
 }
 
 
@@ -468,6 +477,7 @@ section{
 .contactos{
 	display: grid;
 	grid-template-columns:repeat(2, 1fr);
+	background: #f7f7f7;
 	align-items: center;
 	gap: 3rem;
 }
@@ -642,7 +652,6 @@ section{
 	display: flex;
 	flex-direction: column;
 	background: rgba(0,0,0,0.5);
-	border: 2px solid #f0810f;
 	text-align: left;
 	transition: all .40s ease;
 	}
@@ -683,7 +692,6 @@ section{
 }
 
 
-}
 
 
 
